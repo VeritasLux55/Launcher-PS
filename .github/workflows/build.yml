@@ -29,7 +29,7 @@ jobs:
           gradle-version: "8.9"
 
       - name: Compilar APK
-        run: gradle assembleDebug
+        run: gradle assembleDebug --stacktrace --info
         working-directory: Launcher
 
       - name: Publicar APK
